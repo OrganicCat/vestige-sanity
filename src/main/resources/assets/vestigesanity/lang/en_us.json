@@ -1,3 +1,5 @@
 {
-  "item.vestigesanity.empty_syringe": "Empty Syringe"
+  "item.vestigesanity.empty_syringe": "Empty Syringe",
+  "item.vestigesanity.filled_syringe": "Filled Syringe",
+  "item.vestigesanity.cow_syringe": "Cow Filled Syringe"
 }

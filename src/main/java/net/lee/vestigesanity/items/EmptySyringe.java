@@ -1,4 +1,4 @@
-package net.lee.vestigesanity;
+package net.lee.vestigesanity.items;
 
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.minecraft.entity.Entity;

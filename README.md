@@ -1,4 +1,10 @@
-# Fabric Example Mod
+# Vestige of Sanity
+
+## Introduction
+
+Vestige of Sanity is a mod based around blood and magic. It's meant to introduce new uses for those hundreds of cows, and other creatures you've penned up. There's a cost for this magic, however. A balance to the power. Power attracts power, and this means things that go bump in the night will come for you.
+
+I'd like to eventually include a sanity mechanic as well.
 
 ## Setup
 

@@ -41,12 +41,25 @@ public class FilledSyringe extends Item {
 
         Text tooltipText = null;
         if (itemStack.getTag() != null && itemStack.getTag().getSize() > 0) {
-            tooltipText = tooltipText = new LiteralText(itemStack.getTag().getTag("tooltip").asString());
+            tooltipText = new LiteralText(itemStack.getTag().getString("tooltip"));
             Style newStyle = new Style();
             newStyle.setBold(true);
             newStyle.setColor(Formatting.GOLD);
             tooltipText.setStyle(newStyle);
             tooltip.add(tooltipText);
+            if (itemStack.getTag().getTag("bloodQuality") != null) {
+                String bloodQuality = Double.toString(itemStack.getTag().getDouble("bloodQuality"));
+                tooltip.add(new LiteralText("Blood Quality: " + bloodQuality + "%"));
+            }
+            if (itemStack.getTag().getString("bloodTypeName") != null) {
+                Style typeStyle = new Style();
+                typeStyle.setColor(Formatting.RED);
+
+                LiteralText bloodTypeName = new LiteralText("Blood Type: " + itemStack.getTag().getString("bloodTypeName"));
+                bloodTypeName.setStyle(typeStyle);
+                tooltip.add(bloodTypeName);
+            }
+
         } else {
             tooltip.add(new TranslatableText("item.vestigesanity.filled_syringe"));
         }
